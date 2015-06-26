@@ -31,7 +31,7 @@
 		90CB2D1A17C65C1C0028BEE7 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CB2D1617C65C1C0028BEE7 /* Icon-72@2x.png */; };
 		90CB2D1B17C65C1C0028BEE7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CB2D1717C65C1C0028BEE7 /* Icon.png */; };
 		90CB2D1C17C65C1C0028BEE7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CB2D1817C65C1C0028BEE7 /* Icon@2x.png */; };
-		93DBC4721B3C4E5E00797227 /* ADYPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DBC4711B3C4E5E00797227 /* ADYPaymentMethod.m */; };
+		93373C941B3D535800334EFC /* IBANValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 93373C931B3D535800334EFC /* IBANValidator.m */; };
 		93DBC4751B3C4F4400797227 /* ADYCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DBC4741B3C4F4400797227 /* ADYCard.m */; };
 		93DBC4781B3C504700797227 /* ADYSEPAPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DBC4771B3C504700797227 /* ADYSEPAPayment.m */; };
 /* End PBXBuildFile section */
@@ -75,8 +75,8 @@
 		90CB2D1617C65C1C0028BEE7 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		90CB2D1717C65C1C0028BEE7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		90CB2D1817C65C1C0028BEE7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		93DBC4701B3C4E5E00797227 /* ADYPaymentMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYPaymentMethod.h; sourceTree = "<group>"; };
-		93DBC4711B3C4E5E00797227 /* ADYPaymentMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADYPaymentMethod.m; sourceTree = "<group>"; };
+		93373C921B3D535800334EFC /* IBANValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBANValidator.h; sourceTree = "<group>"; };
+		93373C931B3D535800334EFC /* IBANValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBANValidator.m; sourceTree = "<group>"; };
 		93DBC4731B3C4F4400797227 /* ADYCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYCard.h; sourceTree = "<group>"; };
 		93DBC4741B3C4F4400797227 /* ADYCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADYCard.m; sourceTree = "<group>"; };
 		93DBC4761B3C504700797227 /* ADYSEPAPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYSEPAPayment.h; sourceTree = "<group>"; };
@@ -101,6 +101,7 @@
 		7629B8571A938F670086C4F7 /* ADYEncryption */ = {
 			isa = PBXGroup;
 			children = (
+				93373C911B3D52F600334EFC /* Helpers */,
 				7629B8581A938F670086C4F7 /* ADYEncrypter.h */,
 				7629B8591A938F670086C4F7 /* ADYEncrypter.m */,
 				7629B85A1A938F670086C4F7 /* TKAESCCMCryptor.h */,
@@ -109,8 +110,6 @@
 				7629B85D1A938F670086C4F7 /* TKCryptor.m */,
 				7629B85E1A938F670086C4F7 /* TKRSACryptor.h */,
 				7629B85F1A938F670086C4F7 /* TKRSACryptor.m */,
-				93DBC4701B3C4E5E00797227 /* ADYPaymentMethod.h */,
-				93DBC4711B3C4E5E00797227 /* ADYPaymentMethod.m */,
 				93DBC4731B3C4F4400797227 /* ADYCard.h */,
 				93DBC4741B3C4F4400797227 /* ADYCard.m */,
 				93DBC4761B3C504700797227 /* ADYSEPAPayment.h */,
@@ -213,6 +212,15 @@
 			name = Icons;
 			sourceTree = "<group>";
 		};
+		93373C911B3D52F600334EFC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93373C921B3D535800334EFC /* IBANValidator.h */,
+				93373C931B3D535800334EFC /* IBANValidator.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,8 +307,8 @@
 				90A4EDE617C4F37A00992DD3 /* CardDataViewController.m in Sources */,
 				90CB2D0D17C62CFB0028BEE7 /* NSDictionary+Util.m in Sources */,
 				7629B8631A938F670086C4F7 /* TKRSACryptor.m in Sources */,
-				93DBC4721B3C4E5E00797227 /* ADYPaymentMethod.m in Sources */,
 				93DBC4781B3C504700797227 /* ADYSEPAPayment.m in Sources */,
+				93373C941B3D535800334EFC /* IBANValidator.m in Sources */,
 				90CB2D1317C64CB00028BEE7 /* PaymentRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

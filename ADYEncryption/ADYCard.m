@@ -7,6 +7,7 @@
 //
 
 #import "ADYCard.h"
+#import "ADYEncrypter.h"
 
 @implementation ADYCard
 

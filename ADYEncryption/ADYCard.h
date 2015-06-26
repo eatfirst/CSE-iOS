@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ADYPaymentMethod.h"
 
-@interface ADYCard : ADYPaymentMethod
+@interface ADYCard : NSObject
 @property (nonatomic, strong) NSString *number;
 @property (nonatomic, strong) NSString *holderName;
 @property (nonatomic, strong) NSString *cvc;
@@ -18,5 +17,14 @@
 
 @property (nonatomic, strong) NSDate *generationtime;
 @property (readonly) NSDateFormatter *dateFormatter;
+
+/**
+ *  Encrypt the card information in a JSON format using the public key provided by Adyen.
+ *
+ *  @param key THe public key of the merchent.
+ *
+ *  @return An encypted string to be used as payment payload.
+ */
+- (NSString *)encryptWithKey:(NSString *)key;
 
 @end
