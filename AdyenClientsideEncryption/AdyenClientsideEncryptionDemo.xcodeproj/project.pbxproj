@@ -32,6 +32,7 @@
 		90CB2D1B17C65C1C0028BEE7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CB2D1717C65C1C0028BEE7 /* Icon.png */; };
 		90CB2D1C17C65C1C0028BEE7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CB2D1817C65C1C0028BEE7 /* Icon@2x.png */; };
 		93373C941B3D535800334EFC /* IBANValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 93373C931B3D535800334EFC /* IBANValidator.m */; };
+		93C22BCC1D8C0E2300759C2A /* ADYPayPalPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C22BCB1D8C0E2300759C2A /* ADYPayPalPayment.m */; };
 		93DBC4751B3C4F4400797227 /* ADYCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DBC4741B3C4F4400797227 /* ADYCard.m */; };
 		93DBC4781B3C504700797227 /* ADYSEPAPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DBC4771B3C504700797227 /* ADYSEPAPayment.m */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,8 @@
 		90CB2D1817C65C1C0028BEE7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		93373C921B3D535800334EFC /* IBANValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBANValidator.h; sourceTree = "<group>"; };
 		93373C931B3D535800334EFC /* IBANValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBANValidator.m; sourceTree = "<group>"; };
+		93C22BCA1D8C0E2300759C2A /* ADYPayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYPayPalPayment.h; sourceTree = "<group>"; };
+		93C22BCB1D8C0E2300759C2A /* ADYPayPalPayment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADYPayPalPayment.m; sourceTree = "<group>"; };
 		93DBC4731B3C4F4400797227 /* ADYCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYCard.h; sourceTree = "<group>"; };
 		93DBC4741B3C4F4400797227 /* ADYCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADYCard.m; sourceTree = "<group>"; };
 		93DBC4761B3C504700797227 /* ADYSEPAPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADYSEPAPayment.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				93DBC4741B3C4F4400797227 /* ADYCard.m */,
 				93DBC4761B3C504700797227 /* ADYSEPAPayment.h */,
 				93DBC4771B3C504700797227 /* ADYSEPAPayment.m */,
+				93C22BCA1D8C0E2300759C2A /* ADYPayPalPayment.h */,
+				93C22BCB1D8C0E2300759C2A /* ADYPayPalPayment.m */,
 			);
 			name = ADYEncryption;
 			path = ../ADYEncryption;
@@ -308,6 +313,7 @@
 				90CB2D0D17C62CFB0028BEE7 /* NSDictionary+Util.m in Sources */,
 				7629B8631A938F670086C4F7 /* TKRSACryptor.m in Sources */,
 				93DBC4781B3C504700797227 /* ADYSEPAPayment.m in Sources */,
+				93C22BCC1D8C0E2300759C2A /* ADYPayPalPayment.m in Sources */,
 				93373C941B3D535800334EFC /* IBANValidator.m in Sources */,
 				90CB2D1317C64CB00028BEE7 /* PaymentRequest.m in Sources */,
 			);
