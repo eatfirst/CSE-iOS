@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ADYPayPalPayment : NSObject
-
+@property (nonatomic, strong) NSDictionary *authorisationPayload;
 @end
