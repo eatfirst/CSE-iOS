@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CSE-iOS"
-  s.version      = "1.0.3"
+  s.version      = "1.0.5"
   s.summary      = "Customised client-side encryption on iOS includes SEPA and Credit Card"
   s.homepage     = "https://github.com/eatfirst/CSE-iOS"
   s.license      = 'MIT'
