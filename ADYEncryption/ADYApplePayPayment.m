@@ -13,5 +13,6 @@
 	if (self.paymentToken && self.paymentToken.length > 0) {
 		return YES;
 	}
+	return NO;
 }
 @end
